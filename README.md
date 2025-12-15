@@ -2,7 +2,7 @@
 My final project for ME-314 Theory of Machines - Dynamics at Northwestern University
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Dynammics Simulation](#dynamics-simulation)
+- [Simulating the System's Dynamics](#dynamics-simulation)
 - [Demo](#demo)
 ## Project Overview
 
@@ -31,9 +31,12 @@ $$
 
 All rigid bodies initially start at rest. The bird is located at the end of an ideal spring that acts as my simulation’s slingshot. The other end of the spring is fixed at a height of 2m with coordinates (0, 2, 0) in the world frame. The bird and pig are both perfect spheres with radii equal to 0.5m and masses equal to 3kg. The beam, on the other hand, is a rectangular prism with a height of 8m, a width of 0.2m, and a mass of 10kg. The pig sits on top of the beam, which is fixed at a distance of 10m from the origin of the world frame. The bird's initial position can be modified by adjusting the spring's angle and elongation. This produced a different trajectory by launching the bird at various angles with different initial velocities.
 
-My code used homogeneous transformations extensively; thus, I defined four frames in total: three at the center of mass of each rigid body and one at the origin, acting as the world frame. A diagram showing all the relevant frames and the three phases of the simulation can be seen below:
+My code used homogeneous transformations extensively; thus, I defined four frames in total: three at the center of mass of each rigid body and one at the origin, acting as the world frame. An image showing the homogeneous transformation matrices used to transform each frame into the world frame is shown below.
+
+I divided the system dynamics into three distinct phases, capturing different realities of the system at that point. The first phase is the time during which the bird is accelerated. The second consists of the time after acceleration before any impacts with the other rigid bodies have occurred. Lastly, the third phase consists of the period after the first impact between rigid bodies, up to the moment the pig hits the ground or the maximum time is reached. Please see the image below for a diagram showing the three phases of this simulation and the frames of each rigid body.
 
 
-## Dynamics Simulation
+
+## Simulating the System's Dynamics
 
 ## Demo
