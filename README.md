@@ -65,3 +65,6 @@ Plots when the elongation is 3 m and the initial angle is $-3^\circ$:
 </p>
 
 ## Demo
+Below is an animation of the system when the spring has an initial extension of 3m and an initial angle of $32^\circ$:
+
+![Angry Birds Simulation](videos/L0=3_th0=32.gif)
