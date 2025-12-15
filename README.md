@@ -40,5 +40,13 @@ I divided the system dynamics into three distinct phases, capturing different re
 ![System and frame diagram](system_diagrams/system_diagram.jpg)
 
 ## Simulating the System's Dynamics
+To simulate this system, I first derived the equations of motion for each rigid body using the Euler-Lagrange equation. Then I derived the impact update equations to simulate perfectly elastic collisions. From there, a Runge-Kutta integration function is used to simulate the system’s dynamics up until an impact is detected. Once an impact condition is violated, the previously derived impact update equations are applied to the state immediately before effects to update the system’s velocities. From there, the simulation carries on as before. Plots of the configuration variables are shown below for three different initial spring angles.
+
+Plots when the elongation is 3 m and the initial angle is $32^\circ$:
+
+Plots when the elongation is 3 m and the initial angle is $35^\circ$:
+
+Plots when the elongation is 3 m and the initial angle is $-3^\circ$:
+
 
 ## Demo
